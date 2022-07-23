@@ -1,0 +1,21 @@
+extends ../layout/index
+
+block contenido
+    div.py-10
+        h1.text-4xl.my-10.font-extrabold.text-center bienes
+            span.font-normal raices
+        h2.text-center.text-6xl.font-extrabold= pagina  
+
+        .mt-8.mx-auto.max-w
+            .bg-white.py-8.px-4.shadow
+                form
+                    
+                    div 
+                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="email") email 
+                        input#email.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="tu email" type="text" name="email")
+                    div 
+                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="password") password 
+                        input#password.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="tu password" type="text" name="password")
+                    
+
+                    input(class="w-full bg-indigo-200" type="submit" value="iniciar sesion")
